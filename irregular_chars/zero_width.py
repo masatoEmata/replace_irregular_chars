@@ -17,7 +17,7 @@ ZERO_WIDTH_SPACES = {
 }
 
 
-def remove_zero_width_chars(text: str) -> str:
+def remove_zero_width(text: str) -> str:
     for char in ZERO_WIDTH_SPACES.values():
         text = text.replace(char, "")
     return text
