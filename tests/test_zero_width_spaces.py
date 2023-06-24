@@ -1,4 +1,5 @@
 import pytest
+
 from irregular_chars.zero_width import ZERO_WIDTH_SPACES, remove_zero_width
 
 
