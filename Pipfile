@@ -14,7 +14,7 @@ wheel = "*"
 twine = "*"
 
 [requires]
-python_version = "3.11"
+python_version = "3.10"
 
 [scripts]
 upload = "bash -c 'rm -r dist/* && python setup.py sdist bdist_wheel && twine upload dist/*'"
