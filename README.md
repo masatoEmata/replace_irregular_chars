@@ -42,3 +42,29 @@ assert normalize_width_all("ｱ０") == "ア0"  # True
 from irregular_chars import combine_sound_symbols
 assert combine_sound_symbols("ガギグゲゴ") == "ガギグゲゴ"  # True
 ```
+
+### ivs
+- detect ivs (unicode ivs)
+The Unicode code point of the character is
+in the range of the variant selector (E0100-E01EF).
+You can just ignore this kind of variant selectors.
+
+```py
+from irregular_chars.ivs import is_unicode_ivs
+assert is_unicode_ivs(0xE0100)  # True
+```
+- detect ivs (cjk or supplementary ivs)
+The range of CJK unified ideographs extension B-F
+and supplementary ideographic plane (20000-2FA1F).
+
+They are strongly combined with the previous character.
+So you can not remove or replace just only this characters...
+```py
+from irregular_chars.ivs import is_cjk_or_supplementary_ivs
+assert is_cjk_or_supplementary_ivs(0x20000)  # True
+```
+- ignore unicode ivs and raise if a cjk or supplementary ivs is found.
+```py
+from irregular_chars.ivs import remove_ivs
+assert remove_ivs("test\U000E0100") == "test"  # True
+```
