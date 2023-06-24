@@ -1,5 +1,3 @@
-from .utils import replace_pair
-
 ZERO_WIDTH_SPACES = {
     "ZERO WIDTH SPACE": u"\u200B",
     "ZERO WIDTH NON-JOINER": u"\u200C",
