@@ -13,9 +13,9 @@ pip install irregular_chars
 
 Here is a simple example:
 ```py
-from textcleaning import remove_zero_width_chars
+from irregular_chars.zero_width import remove_zero_width
 
 text = "Hello\u200BWorld"
-clean_text = remove_zero_width_chars(text)
+clean_text = remove_zero_width(text)
 print(clean_text)  # Outputs: HelloWorld
 ```

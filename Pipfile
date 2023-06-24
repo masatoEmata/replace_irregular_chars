@@ -9,6 +9,12 @@ name = "pypi"
 pytest = "*"
 mypy = "*"
 black = "*"
+setuptools = "*"
+wheel = "*"
+twine = "*"
 
 [requires]
 python_version = "3.11"
+
+[scripts]
+upload = "bash -c 'rm -r dist/* && python setup.py sdist bdist_wheel && twine upload dist/*'"
