@@ -1,6 +1,7 @@
 import pytest
 
-from irregular_chars.zero_width import ZERO_WIDTH_SPACES, remove_zero_width
+from irregular_chars import remove_zero_width
+from irregular_chars.zero_width import ZERO_WIDTH_SPACES
 
 
 @pytest.mark.parametrize("name, char", ZERO_WIDTH_SPACES.items())

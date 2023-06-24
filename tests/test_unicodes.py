@@ -1,6 +1,6 @@
 import unicodedata
 
-from irregular_chars.unicodes import to_unicode
+from irregular_chars import to_unicode
 
 
 def test_to_unicode():
