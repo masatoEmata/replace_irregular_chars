@@ -1,12 +1,12 @@
-# irregular_chars
+# irregular-chars
 
-irregular_chars is a library for cleaning text, such as removing zero-width characters or converting full-width characters to half-width.
+irregular-chars is a library for cleaning text, such as removing zero-width characters or converting full-width characters to half-width.
 
 ## Installation
 
 You can install the package via pip:
 ```bash
-pip install irregular_chars
+pip install irregular-chars
 ```
 
 ## Usage
