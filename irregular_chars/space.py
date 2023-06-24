@@ -1,3 +1,5 @@
+from .utils import replace_pair
+
 ZERO_WIDTH_SPACES = {
     "ZERO WIDTH SPACE": u"\u200B",
     "ZERO WIDTH NON-JOINER": u"\u200C",
@@ -16,7 +18,8 @@ ZERO_WIDTH_SPACES = {
 }
 
 
-def remove_zero_width(text: str) -> str:
-    for char in ZERO_WIDTH_SPACES.values():
+def remove_zero_width_spaces(text: str) -> str:
+    pairs = ZERO_WIDTH_SPACES.values()
+    for char in pairs:
         text = text.replace(char, "")
     return text

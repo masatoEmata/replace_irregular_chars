@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+irregular-chars = "*"
 
 [dev-packages]
 pytest = "*"
@@ -12,7 +13,6 @@ black = "*"
 setuptools = "*"
 wheel = "*"
 twine = "*"
-irregular-chars = "*"
 
 [requires]
 python_version = "3.10"

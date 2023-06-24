@@ -1,3 +1,5 @@
+from .utils import replace_pair
+
 SOUND_SYMBOL_VARIATIONS = [
     ("ガ", "ガ"),
     ("ギ", "ギ"),
@@ -59,6 +61,4 @@ def combine_sound_symbols(text: str) -> str:
     >>> combine_sound_symbols("がぎぐげご")
     'がぎぐげご'
     """
-    for pair in SOUND_SYMBOL_VARIATIONS:
-        text = text.replace(pair[0], pair[1])
-    return text
+    return replace_pair(text, SOUND_SYMBOL_VARIATIONS)
