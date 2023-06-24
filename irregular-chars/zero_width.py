@@ -5,7 +5,9 @@ ZERO_WIDTH_SPACES = {
     "ZERO WIDTH NO-BREAK SPACE": u"\uFEFF",
     "RIGHT-TO-LEFT MARK": u"\u200F",
     "LEFT-TO-RIGHT MARK": u"\u200E",
-    "VARIATION SELECTOR-17": u"\uE0100",
+    # "VARIATION SELECTOR-16": u"\uE0100",
+    "VARIATION SELECTOR-16": "󠄀",
+    "VARIATION SELECTOR-17": u"\uE0101",
     "FUNCTION APPLICATION": u"\u2061",
     "SOFT HYPHEN": u"\u00AD",
     "MONGOLIAN VOWEL SEPARATOR": u"\u180E",
@@ -20,4 +22,5 @@ ZERO_WIDTH_SPACES = {
 def remove_zero_width(text: str) -> str:
     for char in ZERO_WIDTH_SPACES.values():
         text = text.replace(char, "")
+        text.replace("​", "").replace("󠄀", "").replace("⁡", "").replace("­", "")
     return text

@@ -1,5 +1,4 @@
 import pytest
-
 from irregular_chars.zero_width import ZERO_WIDTH_SPACES, remove_zero_width
 
 
@@ -20,3 +19,9 @@ def test_remove_zero_width_no_change():
     test_str = "Hello World"
     expected_str = "Hello World"
     assert remove_zero_width(test_str) == expected_str
+
+
+def test_remove_zero_width_use_quotations():
+    origin = '"​"""⁡""­"'
+    expect = '"""""""'
+    assert expect == remove_zero_width(origin)

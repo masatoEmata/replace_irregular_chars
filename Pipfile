@@ -12,6 +12,7 @@ black = "*"
 setuptools = "*"
 wheel = "*"
 twine = "*"
+irregular-chars = "*"
 
 [requires]
 python_version = "3.10"
