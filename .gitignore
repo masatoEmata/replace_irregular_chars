@@ -4,3 +4,4 @@ __pycache__
 .mypy_cache
 irregular_chars.egg-info/
 dist/
+build/

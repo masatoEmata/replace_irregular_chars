@@ -3,7 +3,8 @@ from setuptools import find_packages, setup
 setup(
     name="irregular_chars",
     version="0.1.1",
-    description="A library for cleaning text, such as removing zero-width characters or converting full-width characters to half-width",
+    description="A library for cleaning text, such as removing zero-width characters or"
+    "converting full-width characters to half-width",
     packages=find_packages(),
     install_requires=[],
     classifiers=[  # パッケージのメタデータ（詳細は https://pypi.org/classifiers/ を参照）
