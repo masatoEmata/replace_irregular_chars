@@ -19,5 +19,4 @@ ZERO_WIDTH_SPACES = {
 def remove_zero_width(text: str) -> str:
     for char in ZERO_WIDTH_SPACES.values():
         text = text.replace(char, "")
-        text.replace("​", "").replace("󠄀", "").replace("⁡", "").replace("­", "")
     return text
