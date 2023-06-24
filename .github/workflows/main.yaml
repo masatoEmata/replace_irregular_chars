@@ -1,4 +1,4 @@
-name: Test, Build, Push to Google Cloud Run
+name: Test
 
 
 on:
@@ -6,7 +6,6 @@ on:
   push:
     branches:
       - 'main'
-      - 'fixYaml'
 
 jobs:
   test:
