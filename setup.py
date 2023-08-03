@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name="irregular-chars",
-    version="1.2.0",
+    version="1.4.0",
     description="A library for cleaning text, such as removing zero-width characters or"
     "converting full-width characters to half-width",
     packages=find_packages(),

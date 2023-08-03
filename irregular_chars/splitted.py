@@ -1,6 +1,7 @@
 from .utils import replace_pair
 
 SOUND_SYMBOL_VARIATIONS = [
+    ("ヴ", "ヴ"),
     ("ガ", "ガ"),
     ("ギ", "ギ"),
     ("グ", "グ"),
